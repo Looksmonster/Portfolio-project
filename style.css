@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --bg:         #0c0c0c;
+  --surface:    #141414;
+  --card:       #1a1a1a;
+  --border:     #252525;
+  --orange:     #f05a22;
+  --orange-dim: rgba(240,90,34,0.10);
+  --text:       #e0e0e0;
+  --muted:      #777;
+  --white:      #ffffff;
+  --grey: rgb(27, 27, 27);
+  --radius:     12px;
+  --fs-def:     20px;
+  --fs-6:       24px;
+  --fs-10:      28px;
+
+}
+html{
+    background-color: var(--bg);
+    color: #777;
+}
+/*    HERO    */
+.hero{
+    padding: 30px 80px 0 80px;
+}
+.hero-text{
+    padding: auto;
+}
+.hero-text h2{
+    font-size: 70px;
+    color: var(--orange);
+    font-family: 'Lao Muang Khong';
+}
+/*  SOCIALS */
+.socials{
+    display: flex;
+    gap: 20px;
+}
+.instagram{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid;
+
+    background-color: var(--grey);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.instagram a{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.instagram:hover{
+    transform: translateY(-10px);
+    transition: 0.4s;
+}
+.linkedin{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid;
+
+    background-color: var(--grey);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linkedin:hover{
+    transform: translateY(-10px);
+    transition: 0.4s;
+}
+.linkedin a{
+    text-decoration: none;
+
+    font-size: var(--fs-6);
+
+    color: #777;
+}
+/* HIRE ME BUTTON */
+.button{
+    margin-top: 60px;
+}
+.hireme-btn{
+    width: 156px;
+    height: 100px;
+    padding: 12px 40px;
+
+    background-color: var(--orange);
+    text-decoration: none;
+
+    color: #e0e0e0;
+    border-radius: 10px;
+}
+.hireme-btn:hover{
+    border: white 1px solid;
+
+}
