@@ -20,6 +20,7 @@
   --white:      #ffffff;
   --grey: rgb(27, 27, 27);
   --radius:     12px;
+  --heading:    40px;
   --fs-def:     20px;
   --fs-6:       24px;
   --fs-10:      28px;
@@ -28,10 +29,12 @@
 html{
     background-color: var(--bg);
     color: #777;
+    scroll-behavior: smooth;
 }
 /*    HERO    */
 .hero{
     padding: 30px 80px 0 80px;
+    margin-bottom: 150px;
 }
 .hero-text{
     padding: auto;
@@ -107,5 +110,125 @@ html{
 }
 .hireme-btn:hover{
     border: white 1px solid;
+}
+/* EXPERIENCE BLOCK */
+.exp-container{
+    width: 372px;
+    height: 125px;
 
+    background-color:    var(--grey);
+
+    padding: 24px;
+    margin-top: 80px;
+
+    border-radius:  10px;
+
+    align-items: center;
+    display: flex;
+}
+.exp-block{
+    display: flex;
+    gap: 30px;
+}
+.exp-text{
+    padding: 6px 30px 6px 0;
+
+}
+.exp-text span{
+    color: var(--orange);
+    font-size: var(--fs-6);
+}
+.exp-text p {
+    color: var(--text);
+    font-size: 16px;
+}
+.devider{
+    width: 1px;
+    height: 77px;
+    background-color: var(--muted); 
+}
+/*. SERVICES  */
+.services{
+    margin-bottom: 150px;
+}
+.services .main-text{
+    text-align: center;
+}
+.main-text h2{
+    margin-bottom: 18px;
+
+    font-size: var(--heading);
+
+    color: var(--text);
+}
+.main-text p{
+    margin-bottom: 80px;
+    font-size: 20px;
+}
+.services-blocks{
+    padding: 0 80px;
+    display: flex;
+    gap: 40px;
+}
+.service-block{
+    width: 400px;
+    height: 322px;
+
+    background-color: var(--grey);
+
+    border-radius: 20px;
+}
+/* FOOTER */
+.footer-nav{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+footer{
+    background-color: var(--grey);
+    padding: 40px 80px 24px 80px;
+
+}
+.footer-web{
+    text-decoration: none;
+    font-size: 30px;
+}
+.linki a{
+    text-decoration: none;
+    color: var(--muted);
+}
+.linki{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+}
+.footer-logo{
+    margin-bottom: 50px;
+}
+/* CONTACTS*/
+.contacts{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    font-family: bold;
+    margin-bottom: 50px;
+}
+.contacts a{
+    text-decoration: none;
+    color: var(--muted); 
+    font-size: var(--fs-def);  
+}
+.contacts a:hover{
+    color: var(--white);
+    transition: 0.4s;
+}
+hr{
+    width: 593px;
+}
+.bottom-line{
+    display: flex;
+    justify-content: center;
 }
