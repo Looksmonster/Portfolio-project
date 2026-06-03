@@ -11,6 +11,7 @@
 
 :root {
     --new-orange: rgb(214, 109, 42);
+    --blue: #2563eb;
     --bg:         #0c0c0c;
     --surface:    #141414;
     --card:       #1a1a1a;
@@ -40,20 +41,46 @@ html {
     margin: 0 auto;
     padding: 0 24px;
 }
+/* NAVIGATION */
+.navbar-top{
+    position: sticky;
+    top: 0;
 
+    padding: 10px 80px;
+
+    backdrop-filter: blur(10px);
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.nav li{
+    list-style: none;
+}
+.nav a{
+    text-decoration: none;
+    color: var(--muted);
+}
 /* ==================== HERO ==================== */
 .hero {
     padding: 40px 0 120px 0;
     margin-bottom: 140px;
 }
-
+.hero-container{
+    display: flex;
+}
 .hero-text h2 {
     font-size: 70px;
-    color: var(--orange);
+    color: var(--blue);
     font-family: 'Lao Muang Khong', sans-serif;
 }
 .hero-block{
     max-width: 1280px;
+    width: 100%;
+}
+.hero-image{
+    max-width: 520px;
     width: 100%;
 }
 
@@ -98,7 +125,7 @@ html {
 .hireme-btn {
     display: inline-block;
     padding: 16px 44px;
-    background-color: var(--orange);
+    background-color: var(--blue);
     color: #e0e0e0;
     text-decoration: none;
     border-radius: 12px;
@@ -134,7 +161,7 @@ html {
 }
 
 .exp-text span {
-    color: var(--orange);
+    color: var(--blue);
     font-size: var(--fs-6);
 }
 
@@ -203,18 +230,16 @@ html {
 .about-container {
     max-width: 1300px;
     width: 100%;
+    height: 880px;
+    margin-bottom: 100px;
 
     display: flex;
     gap: 80px;
-
-    align-items: flex-start;
 }
 
 .about-container img {
     width: 100%;
     max-width: 460px;
-    height: auto;
-    border-radius: 12px;
 }
 .about-container p{
     max-width: 630px;
@@ -245,7 +270,7 @@ html {
     height: 130px;
     border-radius: 50%;
     background-color: var(--bg);
-    border: 10px solid var(--new-orange);
+    border: 10px solid var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -256,7 +281,7 @@ html {
 }
 .percent{
     font-size: 30px;
-    color: var(--orange);
+    color: var(--blue);
 }
 .def-text{
     font-size: 24px;
@@ -279,6 +304,7 @@ footer {
 .footer-web {
     text-decoration: none;
     font-size: 32px;
+
 }
 
 .linki {
@@ -312,7 +338,7 @@ footer {
 }
 
 .contacts a:hover {
-    color: var(--orange);
+    color: var(--blue);
 }
 
 .bottom-line {
@@ -341,6 +367,40 @@ hr {
 }
 /* ADAPTIVE */
 @media (max-width: 430px) {
+    /*HERO SECTION*/    
+    .hero-block{
+        text-align: center;
+    }
+    .hero-container{
+        flex-direction: column;
+    }
+    .hero-text h2{
+        font-size: 50px;
+    }
+    .first{
+        font-size: 16px;
+    }
+    .second{
+        font-size: 20px;
+    }
+    .hero-text{
+        order: 1;
+    }
+    .socials{
+        order: 2;
+        justify-content: center;
+    }
+    .button{
+        order: 3;
+    }
+    .hero-image{
+        width: 20px;
+        order: 4;
+    }
+    .hero{
+        max-width: 380px;
+        width: 100%;
+    }
     /* ABOUT ME */
     .about-text{
         margin-bottom: 70px;
@@ -367,9 +427,14 @@ hr {
     }
     /*SKILLS*/
     .skills{
+        order: 3;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px 10px;
+        gap: 20px;
+    }
+    .circles{
+        max-width: 140px;
+        gap: 10px;
     }
     .circle{
         width: 90px;
