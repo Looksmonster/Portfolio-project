@@ -10,6 +10,7 @@
 }
 
 :root {
+    --new-orange: rgb(214, 109, 42);
     --bg:         #0c0c0c;
     --surface:    #141414;
     --card:       #1a1a1a;
@@ -44,14 +45,16 @@ html {
 .hero {
     padding: 40px 0 120px 0;
     margin-bottom: 140px;
-    max-width: 1280px;
-    width: 100%;
 }
 
 .hero-text h2 {
     font-size: 70px;
     color: var(--orange);
     font-family: 'Lao Muang Khong', sans-serif;
+}
+.hero-block{
+    max-width: 1280px;
+    width: 100%;
 }
 
 /* SOCIALS */
@@ -217,7 +220,46 @@ html {
     max-width: 630px;
     width: 100%;
     line-height: 1.9;
+    margin-bottom: 100px;
     font-size: var(--fs-def);
+}
+/* CIRCLES SKILLS*/
+.skills{
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    max-width: 1300px;
+    width: 100%;
+}
+.circles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    max-width: 160px;      
+}
+
+.circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: var(--bg);
+    border: 10px solid var(--new-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.under-text {
+    text-align: center;
+}
+.percent{
+    font-size: 30px;
+    color: var(--orange);
+}
+.def-text{
+    font-size: 24px;
 }
 
 /* FOOTER */
@@ -313,6 +355,7 @@ hr {
     }
     .about-container{
         flex-direction: column;
+        margin-bottom: 70px;
     }
     .about-container img{
         order: 1;
@@ -322,7 +365,26 @@ hr {
 
         order: 2;
     }
+    /*SKILLS*/
+    .skills{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 10px;
+    }
+    .circle{
+        width: 90px;
+        height: 90px;
+    }
+    .percent{
+        font-size: 24px;
+    }
+    .def-text{
+        font-size: 20px;
+    }
     /* FOOTER */
+    footer{
+        padding: 24px 30px;
+    }
     .footer-logo, .footer-nav, .contacts, .socials-bottom{
         margin-bottom: 30px;
     }
