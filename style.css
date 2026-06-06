@@ -239,19 +239,25 @@ html {
     font-size: 16px;
 }
 .services-blocks {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .service-block {
     width: 100%;
     max-width: 360px;
     background-color: var(--grey);
     border-radius: 16px;
-    border: 1px solid var(--border);
     padding: 28px 24px;
     transition: border-color .25s, transform .25s;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .service-block:hover {
     border-color: var(--orange);
@@ -297,7 +303,7 @@ html {
     width: 100%;
     margin-bottom: 80px;
     display: flex;
-    gap: 60px;
+    gap: 100px;
     align-items: flex-start;
 }
 .about-container img {
@@ -309,6 +315,7 @@ html {
     object-fit: cover;
 }
 .about-container p {
+    padding: 200px 0 200px;
     max-width: 630px;
     width: 100%;
     line-height: 1.9;
@@ -329,7 +336,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40xpx;
+    gap: 40px;
 }
 .project{
     max-width: 400px;
@@ -345,13 +352,15 @@ html {
     max-width: 100%;
     width: 100%;
     border-radius: 30px 30px 0 0;
-    height: 380px;
+    height: 370px;
+    filter: grayscale(50%);
     object-fit: cover;
 }
 .project-text{
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    align-items: center;
+    padding: 10px 20px;
 }
 .name{
     color: #777;
