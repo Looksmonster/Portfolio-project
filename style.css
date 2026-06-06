@@ -486,13 +486,31 @@ hr {
         display: none;
     }
     /*HERO*/
-    .hero-container{
-        display: flex;
-        flex-direction: column;
+    .hero-block {
         text-align: center;
     }
-    .socials{
+    .hero-container {
+        flex-direction: column; /*směr flex prvku*/
+    }
+    .hero-text h2 {
+        font-size: 50px;
+    }
+    .hero-text {
+        order: 1;
+    }
+    .socials {
+        order: 2;
         justify-content: center;
+    }
+    .button {
+        order: 3;
+        margin-top: 30px;
+    }
+    .hero-image {
+        width: 100%;
+    }
+    .exp-container {
+        margin: 40px auto;
     }
     /*ABOUT ME*/
     .about-container{
@@ -566,6 +584,18 @@ hr {
     .about-container p {
         font-size: 14px;
         order: 2;
+    }
+    /*SERVICES*/
+    .main-text h2{
+        font-size: var(--fs-6);
+    }
+    .services-blocks{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        width: fit-content;
+    }
+    .service-block{
+        max-width: 180px;
     }
     /*PORTFOLIO*/
     /* FOOTER */
