@@ -39,23 +39,34 @@ html {
     width: 100%;
     margin: 0 auto;
     padding: 0 24px;
-    box-sizing: border-box;
 }
 /*NAVIGATION*/
 .navbar-top {
     display: flex;    /*změní prvek na flex kontejner*/
     align-items: center;  /*zarovná flex prvky na střed podél vedlejší osy*/
-    justify-content: center; /* pracuje jenom v display flex*/
-    gap: 200px;
+    justify-content: space-between; /* pracuje jenom v display flex*/
     padding: 10px 80px;
     position: sticky;
     top: 0;
+    gap: 20px;
     z-index: 100;
     backdrop-filter: blur(10px); /*ROZMAZANE*/
     background: rgba(12,12,12,0.88);
     border-bottom: 1px solid var(--border);
 }
-
+.hireme-btn-top{
+    display: inline-block;
+    padding: 12px 40px;
+    white-space: nowrap;
+    background-color: var(--whiteblue);
+    color: #fff;
+    text-decoration: none;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s;
+    flex-shrink: 0;
+}
 .nav-logo {
     font-size: 30px;
     font-weight: 700;
@@ -65,9 +76,10 @@ html {
 }
 
 .nav {
+    white-space: nowrap;
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 30px;
 }   
 .nav li {
     list-style: none;
@@ -303,8 +315,8 @@ html {
     width: 100%;
     margin-bottom: 80px;
     display: flex;
+    justify-content: center;
     gap: 100px;
-    align-items: flex-start;
 }
 .about-container img {
     width: 100%;
@@ -315,7 +327,7 @@ html {
     object-fit: cover;
 }
 .about-container p {
-    padding: 200px 0 200px;
+    padding: 100px 0 200px 0;
     max-width: 630px;
     width: 100%;
     line-height: 1.9;
@@ -475,6 +487,7 @@ hr {
     }
     /*HERO*/
     .hero-container{
+        display: flex;
         flex-direction: column;
         text-align: center;
     }
@@ -485,6 +498,7 @@ hr {
     .about-container{
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
     .about-container img{
         order: 1;
