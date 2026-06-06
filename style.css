@@ -508,7 +508,7 @@ hr {
     }
 }
 /*ADAPTIVE PHONE*/
-@media (max-width: 430px) {
+@media (max-width: 560px) {
     /* NAVBAR */
     .navbar-top {
         gap: 0;
