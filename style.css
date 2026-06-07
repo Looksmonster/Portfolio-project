@@ -5,40 +5,33 @@
 }
 
 * {
-    margin: 0;
+    margin: 0 ;
     padding: 0;
 }
-
 :root {
-    --whiteblue: #8d4326;
+    --og:     #8d4326;
     --bg:         #0c0c0c;
-    --surface:    #141414;
-    --card:       #1a1a1a;
     --border:     #252525;
-    --orange:     #f05a22;
-    --text:       #e0e0e0;
+    --text:       #e2e0e0;
     --muted:      #777;
-    --white:      #ffffff;
     --grey:       #1b1b1b;
     --radius:     12px;
 
-    --heading:    42px;
+    --h2:    42px;
     --fs-def:     20px;
     --fs-6:       24px;
 }
-
 /*BASE*/
 html {
     background-color: var(--bg);
     color: var(--muted);
     scroll-behavior: smooth;
 }
-
 .main-container {
     max-width: 1440px;
     width: 100%;
-    margin: 0 auto;
     padding: 0 24px;
+    margin: 0 auto;
 }
 /*NAVIGATION*/
 .navbar-top {
@@ -55,26 +48,24 @@ html {
     border-bottom: 1px solid var(--border);
 }
 .hireme-btn-top{
-    display: inline-block;
     padding: 12px 40px;
     white-space: nowrap;
-    background-color: var(--whiteblue);
-    color: #fff;
+    background-color: var(--og);
+    color: var(--text);
     text-decoration: none;
     border-radius: var(--radius);
     font-weight: 600;
     font-size: 15px;
-    transition: all 0.3s;
+    transition: 0.3s;
     flex-shrink: 0;
 }
 .nav-logo {
     font-size: 30px;
     font-weight: 700;
-    color: var(--whiteblue);
+    color: var(--og);
     text-decoration: none;
-    letter-spacing: .1em;
+    letter-spacing: 2px;
 }
-
 .nav {
     white-space: nowrap;
     display: flex;
@@ -91,9 +82,8 @@ html {
     font-size: 18px;
 }
 .nav a:hover {
-    color: var(--white);
+    color: var(--text);
 }
-
 /*HERO*/
 .hero {
     padding: 40px 0 120px 0;
@@ -106,9 +96,9 @@ html {
     align-items: center;
     gap: 40px;
 }
-.hero-text h2 {
+.hero-txt h2 {
     font-size: 70px;
-    color: var(--whiteblue);
+    color: var(--og);
 }
 .first{
     font-size: 20px;
@@ -136,53 +126,50 @@ html {
     gap: 14px;
     margin: 30px 0;
 }
-
 .instagram,
 .linkedin,
-.globe,
-.behance,
-.instagram-bottom {
+.github,
+.instagram-bottom,
+.linkedin-bottom,
+.github-bottom {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    border: 1px solid var(--border);
+    border: 1px solid var(--muted);
     background-color: var(--grey);
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s;
 }
-
 .instagram:hover,
 .linkedin:hover,
-.globe:hover,
-.behance:hover,
+.github:hover,
+.github-bottom:hover,
+.linkedin-bottom:hover,
 .instagram-bottom:hover {
     transform: translateY(-6px);
-    border-color: var(--orange);
 }
-
 .instagram a,
 .linkedin a,
 .globe a,
-.behance a,
-.instagram-bottom a {
+.instagram-bottom a,
+.linkedin-bottom a,
+.github-bottom a{
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
 }
-
 /* HIRE ME BUTTON */
 .button {
     margin-top: 60px;
 }
-
 .hireme-btn {
     display: inline-block;
     padding: 14px 36px;
-    background-color: var(--whiteblue);
-    color: #fff;
+    background-color: var(--og);
+    color: var(--text);
     text-decoration: none;
     border-radius: var(--radius);
     font-weight: 600;
@@ -194,7 +181,6 @@ html {
     opacity: .85; /*pruhlednost*/
     transform: translateY(-3px); /*posune nahoru*/
 }
-
 /* EXPERIENCE BLOCK */
 .exp-container {
     width: 100%;
@@ -208,24 +194,22 @@ html {
     align-items: center;
     justify-content: center;
 }
-
 .exp-block {
     display: flex;
     gap: 24px;
     align-items: center;
 }
-
-.exp-text {
+.exp-txt {
     padding-right: 0;
     text-align: center;
 }
-.exp-text span {
-    color: var(--whiteblue);
+.exp-txt span {
+    color: var(--og);
     font-size: var(--fs-6);
     font-weight: 700;
     display: block;
 }
-.exp-text p {
+.exp-txt p {
     color: var(--text);
     font-size: 14px;
 }
@@ -238,17 +222,17 @@ html {
 .services {
     margin-bottom: 140px;
 }
-.main-text {
+.main-txt {
     text-align: center;
 }
-.main-text h2 {
-    margin-bottom: 20px;
-    font-size: var(--heading);
+.main-txt h2 {
+    font-size: var(--h2);
     color: var(--text);
 }
-.main-text p {
+.main-txt p {
     margin-bottom: 60px;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 1.6;
 }
 .services-blocks {
     display: grid;
@@ -272,7 +256,7 @@ html {
     align-items: center;
 }
 .service-block:hover {
-    border-color: var(--orange);
+    border-color: var(--og);
     transform: translateY(-4px);
 }
 .service-icon {
@@ -288,7 +272,7 @@ html {
 .service-block h3 {
     font-size: 15px;
     font-weight: 600;
-    color: var(--orange);
+    color: var(--og);
     margin-bottom: 10px;
 }
 .service-block p {
@@ -300,15 +284,18 @@ html {
 .aboutme {
     margin-bottom: 140px;
 }
-.about-text {
+.about-txt {
     text-align: center;
     margin-bottom: 40px;
     font-size:     20px;
 }
-.about-text h2 {
-    margin-bottom: 18px;
-    font-size: var(--heading);
+.about-txt h2 {
+    font-size: var(--h2);
     color: var(--text);
+}
+.about-txt p{
+    font-size: 20px;
+    line-height: 1.6;
 }
 .about-container {
     max-width: 1300px;
@@ -338,17 +325,25 @@ html {
 .portfolio-container {
     margin-bottom: 100px;
 }
-.portfolio-container h2 {
-    text-align: center;
-    font-size: var(--heading);
-    color: var(--text);
-    margin-bottom: 40px;
-}
 .portfolio-block{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
+    flex-wrap: wrap;
+}
+.portfolio-txt{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.portfolio-txt h2{
+    text-align: center;
+    font-size: var(--h2);
+    color: var(--text);
+}
+.portfolio-txt p{
+    font-size: 20px;
+    line-height: 1.6;
 }
 .project{
     max-width: 400px;
@@ -368,7 +363,7 @@ html {
     filter: grayscale(50%);
     object-fit: cover;
 }
-.project-text{
+.project-txt{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -392,25 +387,21 @@ footer {
     background-color: var(--grey);
     padding: 40px 80px 20px 80px;
 }
-
 .footer-logo {
     margin-bottom: 30px;
     text-align: center;
 }
-
 .footer-web {
     text-decoration: none;
     font-size: 32px;
     font-weight: 700;
-    color: var(--orange);
+    color: var(--og);
     letter-spacing: .1em;
 }
-
 .footer-nav {
     text-align: center;
     margin-bottom: 30px;
 }
-
 .linki {
     list-style: none;
     display: flex;
@@ -418,13 +409,11 @@ footer {
     gap: 50px;
     flex-wrap: wrap;
 }
-
 .linki a {
     text-decoration: none;
     color: var(--muted);
     transition: color .2s;
 }
-
 .linki a:hover {
     color: var(--text);
 }
@@ -448,7 +437,7 @@ footer {
 }
 
 .contacts a:hover {
-    color: var(--orange);
+    color: var(--og);
 }
 
 .bottom-line {
@@ -492,10 +481,10 @@ hr {
     .hero-container {
         flex-direction: column; /*směr flex prvku*/
     }
-    .hero-text h2 {
+    .hero-txt h2 {
         font-size: 50px;
     }
-    .hero-text {
+    .hero-txt {
         order: 1;
     }
     .socials {
@@ -544,10 +533,10 @@ hr {
     .hero-container {
         flex-direction: column; /*směr flex prvku*/
     }
-    .hero-text h2 {
+    .hero-txt h2 {
         font-size: 50px;
     }
-    .hero-text {
+    .hero-tet {
         order: 1;
     }
     .socials {
@@ -566,10 +555,10 @@ hr {
     }
 
     /* ABOUT ME */
-    .about-text {
+    .about-txt {
         margin-bottom: 40px;
     }
-    .about-text h2 {
+    .about-txt h2 {
         font-size: var(--fs-6);
     }
     .about-container {
@@ -586,7 +575,7 @@ hr {
         order: 2;
     }
     /*SERVICES*/
-    .main-text h2{
+    .main-txt h2{
         font-size: var(--fs-6);
     }
     .services-blocks{
@@ -596,8 +585,29 @@ hr {
     }
     .service-block{
         max-width: 180px;
+        padding: 20px;
     }
     /*PORTFOLIO*/
+    .portfolio-block{
+        flex-direction: column;
+    }
+    .project{
+        max-width: 300px;
+        height: 320px;
+    }
+    .project img{
+        height: 280px;
+        width: 100%;
+    }
+    .project-txt{
+        padding: 5px 15px;
+    }
+    .name{
+        font-size: 16px;
+    }
+    .language{
+        font-size: 16px;
+    }
     /* FOOTER */
     footer {
         padding: 24px 20px;
