@@ -1,12 +1,8 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
 * {
     margin: 0 ;
     padding: 0;
+    box-sizing: border-box;
 }
 :root {
     --og:     #8d4326;
@@ -35,15 +31,15 @@ html {
 }
 /*NAVIGATION*/
 .navbar-top {
-    display: flex;    /*změní prvek na flex kontejner*/
-    align-items: center;  /*zarovná flex prvky na střed podél vedlejší osy*/
-    justify-content: space-between; /* pracuje jenom v display flex*/
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
     padding: 10px 80px;
     position: sticky;
     top: 0;
     gap: 20px;
     z-index: 100;
-    backdrop-filter: blur(10px); /*ROZMAZANE*/
+    backdrop-filter: blur(10px);
     background: rgba(12,12,12,0.88);
     border-bottom: 1px solid var(--border);
 }
@@ -57,7 +53,6 @@ html {
     font-weight: 600;
     font-size: 15px;
     transition: 0.3s;
-    flex-shrink: 0;
 }
 .nav-logo {
     font-size: 30px;
@@ -67,7 +62,6 @@ html {
     letter-spacing: 2px;
 }
 .nav {
-    white-space: nowrap;
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -78,7 +72,7 @@ html {
 .nav a {
     text-decoration: none;
     color: var(--muted);
-    transition: color .2s; /*plynule přechod*/
+    transition: color .2s;
     font-size: 18px;
 }
 .nav a:hover {
@@ -89,7 +83,7 @@ html {
     padding: 40px 0 120px 0;
     margin-bottom: 140px;
 }
-.hero-container {
+.hero-all {
     display: flex;
     max-width: 1280px;
     width: 100%;
@@ -107,7 +101,6 @@ html {
     font-size: 28px;
 }
 .hero-block {
-    max-width: 1280px;
     width: 100%;
 }
 .hero-image {
@@ -116,7 +109,6 @@ html {
 }
 .hero-image img {
     width: 100%;
-    height: auto;
     filter: grayscale(100%);
 
 }
@@ -140,7 +132,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s;
+    transition: 0.3s;
 }
 .instagram:hover,
 .linkedin:hover,
@@ -174,16 +166,15 @@ html {
     border-radius: var(--radius);
     font-weight: 600;
     font-size: 15px;
-    transition: all 0.3s;
+    transition: 0.3s;
 }
 
 .hireme-btn:hover {
-    opacity: .85; /*pruhlednost*/
-    transform: translateY(-3px); /*posune nahoru*/
+    opacity: .85; 
+    transform: translateY(-3px); 
 }
 /* EXPERIENCE BLOCK */
-.exp-container {
-    width: 100%;
+.exp-all {
     max-width: 320px;
     background-color: var(--grey);
     padding: 22px 28px;
@@ -200,7 +191,6 @@ html {
     align-items: center;
 }
 .exp-txt {
-    padding-right: 0;
     text-align: center;
 }
 .exp-txt span {
@@ -249,7 +239,7 @@ html {
     background-color: var(--grey);
     border-radius: 16px;
     padding: 28px 24px;
-    transition: border-color .25s, transform .25s;
+    transition: .25s;
     border: 1px solid var(--border);
     display: flex;
     flex-direction: column;
@@ -396,7 +386,7 @@ footer {
     font-size: 32px;
     font-weight: 700;
     color: var(--og);
-    letter-spacing: .1em;
+    letter-spacing: 2px;
 }
 .footer-nav {
     text-align: center;
@@ -412,7 +402,7 @@ footer {
 .linki a {
     text-decoration: none;
     color: var(--muted);
-    transition: color .2s;
+    transition: .2s;
 }
 .linki a:hover {
     color: var(--text);
@@ -422,7 +412,6 @@ footer {
     display: flex;
     gap: 40px;
     justify-content: center;
-    flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
@@ -478,8 +467,8 @@ hr {
     .hero-block {
         text-align: center;
     }
-    .hero-container {
-        flex-direction: column; /*směr flex prvku*/
+    .hero-all {
+        flex-direction: column; 
     }
     .hero-txt h2 {
         font-size: 50px;
@@ -498,7 +487,7 @@ hr {
     .hero-image {
         width: 100%;
     }
-    .exp-container {
+    .exp-all {
         margin: 40px auto;
     }
     /*ABOUT ME*/
@@ -519,7 +508,6 @@ hr {
     /* NAVBAR */
     .navbar-top {
         gap: 0;
-        justify-content: space-between;
         padding: 10px 20px;
     }
     .nav {
@@ -530,27 +518,19 @@ hr {
     .hero-block {
         text-align: center;
     }
-    .hero-container {
-        flex-direction: column; /*směr flex prvku*/
-    }
     .hero-txt h2 {
         font-size: 50px;
     }
-    .hero-tet {
-        order: 1;
-    }
     .socials {
-        order: 2;
         justify-content: center;
     }
     .button {
-        order: 3;
         margin-top: 30px;
     }
     .hero-image {
         width: 100%;
     }
-    .exp-container {
+    .exp-all {
         margin: 40px auto;
     }
 
@@ -562,24 +542,20 @@ hr {
         font-size: var(--fs-6);
     }
     .about-container {
-        flex-direction: column;
         margin-bottom: 40px;
         gap: 24px;
     }
     .about-container img {
         max-width: 100%;
-        order: 1;
     }
     .about-container p {
         font-size: 14px;
-        order: 2;
     }
     /*SERVICES*/
     .main-txt h2{
         font-size: var(--fs-6);
     }
     .services-blocks{
-        grid-template-columns: repeat(2, 1fr);
         margin: 0 auto;
         width: fit-content;
     }
