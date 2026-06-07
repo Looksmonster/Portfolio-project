@@ -96,15 +96,17 @@ html {
 }
 .first{
     font-size: 20px;
+    margin-bottom: 5px;
 }
 .second{
     font-size: 28px;
+    margin-bottom: 15px;
 }
 .hero-block {
     width: 100%;
 }
 .hero-image {
-    max-width: 520px;
+    max-width: 400px;
     width: 100%;
 }
 .hero-image img {
