@@ -8,7 +8,7 @@
     --og:         #a64d2a;
     --bg:         #0c0c0c;
     --border:     #252525;
-    --text:       #e2e0e0;
+    --text:       #d6cbcb;
     --muted:      #777;
     --grey:       #1b1b1b;
     --radius:     12px;
@@ -204,7 +204,7 @@ html {
 }
 .exp-txt p {
     color: var(--text);
-    font-size: 14px;
+    font-size: 16px;
 }
 .devider {
     width: 1px;
