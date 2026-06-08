@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 :root {
-    --og:     #8d4326;
+    --og:         #a64d2a;
     --bg:         #0c0c0c;
     --border:     #252525;
     --text:       #e2e0e0;
@@ -93,6 +93,7 @@ html {
 .hero-txt h2 {
     font-size: 70px;
     color: var(--og);
+    font-family:Space grotesk, sans-serif;
 }
 .first{
     font-size: 20px;
@@ -312,6 +313,7 @@ html {
     line-height: 1.9;
     font-size: 15px;
     font-size: 20px;
+    font-family: Inter, sans-serif;
 }
 /*PORTFOLIO*/
 .portfolio-container {
