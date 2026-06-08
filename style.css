@@ -307,11 +307,9 @@ html {
     object-fit: cover;
 }
 .about-container p {
-    padding: 100px 0 200px 0;
     max-width: 630px;
     width: 100%;
     line-height: 1.9;
-    font-size: 15px;
     font-size: 20px;
     font-family: Inter, sans-serif;
 }
