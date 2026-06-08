@@ -81,7 +81,7 @@ html {
 /*HERO*/
 .hero {
     padding: 40px 0 120px 0;
-    margin-bottom: 140px;
+    margin-bottom: 100px;
 }
 .hero-all {
     display: flex;
@@ -112,7 +112,7 @@ html {
 }
 .hero-image img {
     width: 100%;
-    filter: grayscale(100%);
+    filter: grayscale(50%);
 
 }
 /* SOCIALS */
@@ -213,7 +213,7 @@ html {
 }
 /*SERVICES*/
 .services {
-    margin-bottom: 140px;
+    margin-bottom: 100px;
 }
 .main-txt {
     text-align: center;
@@ -275,7 +275,7 @@ html {
 }
 /*ABOUT ME*/
 .aboutme {
-    margin-bottom: 140px;
+    margin-bottom: 100px;
 }
 .about-txt {
     text-align: center;
@@ -303,7 +303,7 @@ html {
     max-width: 400px;
     height: 700px;
     border-radius: var(--radius);
-    filter: grayscale(100%);
+    filter: grayscale(50%);
     object-fit: cover;
 }
 .about-container p {
