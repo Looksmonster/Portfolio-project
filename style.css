@@ -567,6 +567,9 @@ hr {
         max-width: 180px;
         padding: 20px;
     }
+    .service-block p{
+        line-height: 1.2;
+    }
     /*PORTFOLIO*/
     .portfolio-block{
         flex-direction: column;
