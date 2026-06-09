@@ -85,8 +85,6 @@ html {
 }
 .hero-all {
     display: flex;
-    max-width: 1280px;
-    width: 100%;
     align-items: center;
     gap: 40px;
 }
@@ -302,7 +300,6 @@ html {
 .about-container img {
     width: 100%;
     max-width: 400px;
-    height: 700px;
     border-radius: var(--radius);
     filter: grayscale(50%);
     object-fit: cover;
