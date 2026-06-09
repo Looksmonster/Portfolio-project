@@ -239,6 +239,7 @@ html {
 .service-block {
     width: 100%;
     max-width: 360px;
+    height: 240px;
     background-color: var(--grey);
     border-radius: 16px;
     padding: 28px 24px;
