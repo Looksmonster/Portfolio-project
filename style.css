@@ -80,7 +80,7 @@ html {
 }
 /*HERO*/
 .hero {
-    padding: 40px 0 120px 0;
+    padding: 40px 0 120px 0; /**/
 }
 .hero-all {
     display: flex;
