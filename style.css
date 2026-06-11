@@ -90,6 +90,7 @@ html {
 .hero-txt h2 {
     font-size: 70px;
     color: var(--og);
+
 }
 .first{
     font-size: 20px;
@@ -302,7 +303,6 @@ html {
 }
 .about-container p {
     max-width: 630px;
-    width: 100%;
     line-height: 1.9;
     font-size: 20px;
     font-family: Inter, sans-serif;
@@ -333,7 +333,6 @@ html {
 }
 .project{
     max-width: 400px;
-    width: 100%;
     height: 420px;
     background-color: var(--grey);
     border-radius: 30px;
@@ -343,7 +342,6 @@ html {
 }
 .project img{
     max-width: 100%;
-    width: 100%;
     border-radius: 30px 30px 0 0;
     height: 370px;
     filter: grayscale(50%);
@@ -352,7 +350,6 @@ html {
 .project-txt{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 10px 20px;
 }
 .name{
