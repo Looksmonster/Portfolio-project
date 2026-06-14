@@ -41,12 +41,11 @@ html {
     gap: 20px;
     z-index: 100;
     backdrop-filter: blur(10px);
-    background: rgba(12,12,12,0.88);
+    background-color: rgba(12,12,12,0.8);
     border-bottom: 1px solid var(--border);
 }
 .hireme-btn-top{
     padding: 12px 40px;
-    white-space: nowrap;
     background-color: var(--og);
     color: var(--text);
     text-decoration: none;
@@ -55,11 +54,12 @@ html {
     font-size: 15px;
 }
 .nav-logo {
-    font-size: 30px;
-    font-weight: 700;
-    color: var(--og);
-    text-decoration: none;
-    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.nav-logo img {
+    width: 50px;
 }
 .nav {
     display: flex;
@@ -375,11 +375,13 @@ footer {
     text-align: center;
 }
 .footer-web {
-    text-decoration: none;
-    font-size: 32px;
-    font-weight: 700;
-    color: var(--og);
-    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.footer-web img {
+    width: 50px;
 }
 .footer-nav {
     text-align: center;
@@ -415,7 +417,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 6px;
-    transition: color .2s;
+    transition: .2s;
 }
 
 .contacts a:hover {
